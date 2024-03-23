@@ -12,4 +12,9 @@ public class SalesOrderItem(int salesOderId, int productId, int quantity, double
     {
         return Guid.NewGuid();
     }
+
+    public double CalculateItemPrice()
+    {
+        return Quantity * UnitPrice;
+    }
 }
